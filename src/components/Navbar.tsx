@@ -96,6 +96,7 @@ export function Navbar() {
             ))}
           </div>
           <div className="mt-auto mb-8 flex justify-center">
+           <Link to='/contact'>
             <Button 
               variant="outline" 
               className="border-shaza-gold text-shaza-gold hover:bg-shaza-gold hover:text-shaza-black"
@@ -103,6 +104,7 @@ export function Navbar() {
             >
               Get a Quote
             </Button>
+           </Link>
           </div>
         </div>
       )}
