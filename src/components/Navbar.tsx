@@ -64,9 +64,11 @@ export function Navbar() {
         </div>
         
         <div className="hidden md:block">
+          <Link to='/contact'>
           <Button variant="outline" className="border-shaza-gold text-shaza-gold hover:bg-shaza-gold hover:text-shaza-black">
             Get a Quote
           </Button>
+          </Link>
         </div>
         
         {/* Mobile menu button */}
@@ -97,6 +99,7 @@ export function Navbar() {
             <Button 
               variant="outline" 
               className="border-shaza-gold text-shaza-gold hover:bg-shaza-gold hover:text-shaza-black"
+              
             >
               Get a Quote
             </Button>

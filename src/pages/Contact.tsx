@@ -179,7 +179,7 @@ const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
                 </div>
               </div>
               
-              <div className="mt-12">
+              {/* <div className="mt-12">
                 <h3 className="text-xl font-serif mb-4">Find Us On Map</h3>
                 <div className="h-[300px] rounded-lg overflow-hidden">
                   <iframe 
@@ -192,7 +192,7 @@ const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
                     title="SHAZA Builders & Engineers Location"
                   ></iframe>
                 </div>
-              </div>
+              </div> */}
             </div>
             
             {/* Contact Form */}
@@ -210,7 +210,7 @@ const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
                           <FormLabel>Full Name</FormLabel>
                           <FormControl>
                             <Input 
-                              placeholder="John Smith" 
+                              placeholder="Enter your name" 
                               {...field} 
                               className="bg-shaza-black border-shaza-gold/30 focus:border-shaza-gold"
                             />
@@ -229,7 +229,7 @@ const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
                             <FormLabel>Email</FormLabel>
                             <FormControl>
                               <Input 
-                                placeholder="email@example.com" 
+                                placeholder="Enter your email" 
                                 {...field} 
                                 type="email"
                                 className="bg-shaza-black border-shaza-gold/30 focus:border-shaza-gold"
@@ -248,7 +248,7 @@ const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
                             <FormLabel>Phone</FormLabel>
                             <FormControl>
                               <Input 
-                                placeholder="+91 123 456 7890" 
+                                placeholder="+91 123 456 7890 Phone" 
                                 {...field} 
                                 type="tel"
                                 className="bg-shaza-black border-shaza-gold/30 focus:border-shaza-gold"
