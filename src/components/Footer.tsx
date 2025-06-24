@@ -26,7 +26,7 @@ export function Footer() {
               <a href="#" className="bg-shaza-darkgray p-2 rounded-full text-white hover:text-shaza-gold transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="bg-shaza-darkgray p-2 rounded-full text-white hover:text-shaza-gold transition-colors">
+              <a href="https://www.instagram.com/shazabuilderscoorg" className="bg-shaza-darkgray p-2 rounded-full text-white hover:text-shaza-gold transition-colors">
                 <Instagram size={20} />
               </a>
               <a href="#" className="bg-shaza-darkgray p-2 rounded-full text-white hover:text-shaza-gold transition-colors">
@@ -62,18 +62,18 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-shaza-gold" />
-                <span>+91 123 456 7890</span>
+                <span>+91 948 281 3414</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-shaza-gold" />
-                <a href="mailto:info@shazabuilders.com" className="gold-hover">info@shazabuilders.com</a>
+                <a href="mailto:info@shazabuilders.com" className="gold-hover">shazabuilderscoorg@gmail.com</a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-shaza-gold mt-1" />
                 <span>
                   SHAZA Builders & Engineers<br />
-                  LLC Coorg, Karnataka<br />
-                  India - 571201
+                  LLC Kushalnagar ,Coorg, Karnataka<br />
+                  India - 571234
                 </span>
               </li>
             </ul>

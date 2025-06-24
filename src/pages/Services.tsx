@@ -65,6 +65,50 @@ export default function Services() {
         "Risk assessment and management",
         "Regular progress reporting and client communication"
       ]
+    },
+     {
+      title: "Gardening",
+      icon: Briefcase,
+      description: "We excel at managing garden construction projects from inception to completion, ensuring quality, timeliness, and cost-effectiveness",
+      features: [
+        "Comprehensive garden design and planting schedule",
+        "Budget estimation and resource allocation",
+        "Quality assurance and horticultural care",
+        "Risk assessment and pest/disease management",
+        "Regular progress updates and client consultation"
+      ]
+    },
+     {
+      title: "Landscaping",
+      icon: Briefcase,
+      description: "We specialize in delivering exceptional landscaping projects by focusing on creativity, durability, and client vision",
+      features: [
+        "Tailored landscape design tailored to site conditions and client preferences",
+        "Selection and installation of sustainable materials",
+        "Ongoing site monitoring and adjustment post-installation",
+        
+      ]
+    },
+     {
+      title: "Interioring",
+      icon: Briefcase,
+      description: "We bring interior spaces to life with creativity, comfort, and functionality, tailored to your lifestyle and taste",
+      features: [
+        "Custom space planning and layout design that maximizes flow, light, and usability while reflecting your personal style.",
+        "Coordination with contractors, craftsmen, and suppliers to ensure seamless execution",
+        "Quality assurance and control",
+        "Continuous client collaboration and updates throughout the process"
+      ]
+    },
+    {
+      title: "Water Proofing",
+      icon: Briefcase,
+      description: "We specialize in protecting structures from water damage by delivering reliable and durable waterproofing solutions",
+      features: [
+        "Thorough assessment of vulnerable areas to determine the most effective waterproofing methods and materials.",
+        "Use of high-quality membranes, coatings, sealants, and drainage systems ",
+        "Regular inspection and maintenance planning"
+      ]
     }
   ];
 
@@ -136,8 +180,12 @@ export default function Services() {
                         "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1531&auto=format&fit=crop",
                         "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1470&auto=format&fit=crop",
                         "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1470&auto=format&fit=crop",
-                        "https://images.unsplash.com/photo-1618172193622-ae2d025f2c95?q=80&w=1464&auto=format&fit=crop",
-                        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1470&auto=format&fit=crop"
+                        "https://blog.novatr.com/hubfs/An%20architect%20creating%20a%20building%20model.webp",
+                        "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/2Ufj9BtOH5y2X1zqJGC7DW/42ca8f8ec791bd4363748714dd2a91f7/GettyImages-1885024349.jpg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000",
+                        "https://media.istockphoto.com/id/1445233447/photo/landscape-gardener-laying-turf-for-new-lawn.jpg?s=612x612&w=0&k=20&c=OAK9mHqL-5K36q85Fn46HTQZZUwN5yCR0GS80bu1iOI=",
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq50OtpuM-_hgdsrri_NRTdjBp_zJEFvHwJw&s",
+                        "https://img.freepik.com/free-photo/armchair-green-living-room-with-copy-space_43614-910.jpg?semt=ais_hybrid&w=740",
+                        "https://media.istockphoto.com/id/1042389232/photo/worker-preparing-part-of-bitumen-roofing-felt-roll-for-melting-by-gas-heater-torch-flame-on.jpg?s=612x612&w=0&k=20&c=rPABKM4VJqZVVTpuITFLNSlXaja4vmwUo3WpD_XgLU0="
                       ];
                       e.currentTarget.src = backupImages[index % backupImages.length];
                     }}

@@ -182,33 +182,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Team */}
-      <section className="section-padding bg-shaza-darkgray">
-        <div className="container mx-auto px-4">
-          <SectionHeading 
-            title="Our Team" 
-            subtitle="Meet the experts behind our success"
-          />
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <div key={index} className="bg-shaza-black rounded-lg overflow-hidden group">
-                <div className="aspect-square overflow-hidden">
-                  <img 
-                    src={member.image} 
-                    alt={member.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-serif">{member.name}</h3>
-                  <p className="text-shaza-gold">{member.position}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+    
       
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-shaza-black to-shaza-darkgray">

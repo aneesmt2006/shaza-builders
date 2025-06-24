@@ -45,7 +45,7 @@ export default function Projects() {
       id: 4,
       title: "Shopping Mall",
       category: "commercial",
-      image: "https://images.unsplash.com/photo-1535268244970-1b509f49d7c4?q=80&w=1503&auto=format&fit=crop",
+      image: "https://images.pexels.com/photos/2954405/pexels-photo-2954405.jpeg?cs=srgb&dl=pexels-tuurt-2954405.jpg&fm=jpg",
       completed: "2019"
     },
     {
@@ -65,7 +65,7 @@ export default function Projects() {
       id: 7,
       title: "Riverside Residential Tower",
       category: "ongoing",
-      image: "https://images.unsplash.com/photo-1577593980495-6e8755148b50?q=80&w=1470&auto=format&fit=crop"
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5DeNfpHKOXcxEuPH6YeiZ_f2wng4Izwi6kQ&s"
     },
     {
       id: 8,

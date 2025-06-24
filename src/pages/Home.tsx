@@ -44,7 +44,7 @@ export default function Home() {
     {
       title: 'Modern Office Building',
       category: 'Commercial',
-      imageSrc: 'https://images.unsplash.com/photo-1577042939454-8b29ebe0adad?q=80&w=1374&auto=format&fit=crop',
+      imageSrc: 'https://sdg-migration-id.s3.amazonaws.com/interior-design-linebox-montreal-office-gsoft-GHALL-5_NOV-1218-8.jpg',
     },
     {
       title: 'Residential Apartments',
@@ -59,7 +59,7 @@ export default function Home() {
       <section className="relative hero-height flex items-center">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/lovable-uploads/f301b5fc-1acc-498f-9751-72ae5251b749.png" 
+            src="/lovable-uploads/Untitled design.png" 
             alt="SHAZA Builders & Engineers" 
             className="w-full h-full object-cover"
           />

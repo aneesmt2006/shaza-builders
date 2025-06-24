@@ -41,9 +41,16 @@ export function Navbar() {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2">
           <div className="text-white font-serif text-xl font-bold">
-            <span className="text-shaza-gold">SHA</span>
-            <span className="text-shaza-gold">Z</span>
-            <span className="text-shaza-gold">A</span>
+          <span className={`text-shaza-gold ${scrolled ? "block" : "hidden"} md:block`}>
+  <img 
+    src="/lovable-uploads/shaza2__2_-removebg-preview.png" 
+    alt="Logo" 
+    className="h-28 w-auto rounded-full" 
+  />
+</span>
+
+            {/* <span className="text-shaza-gold">Z</span>
+            <span className="text-shaza-gold">A</span> */}
           </div>
         </Link>
         

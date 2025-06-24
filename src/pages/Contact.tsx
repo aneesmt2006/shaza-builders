@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -10,6 +10,8 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import emailjs from '@emailjs/browser'
+
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -32,6 +34,7 @@ const formSchema = z.object({
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
+  const ref = useRef(null)
   
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -48,15 +51,46 @@ export default function Contact() {
     setIsSubmitting(true);
     
     // Simulate API call
-    setTimeout(() => {
-      console.log(values);
+
+    // setTimeout(() => {
+    //   console.log(values);
+    //   toast({
+    //     title: "Message Sent",
+    //     description: "We'll get back to you as soon as possible!",
+    //   });
+    //   form.reset();
+    //   setIsSubmitting(false);
+    // }, 1500);
+
+    const serviceID = import.meta.env.SERVICE_ID;
+const templateID = import.meta.env.TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    emailjs.sendForm('service_gg4g1pf','template_gm0nywo',ref.current,'zN8muHBso5RWqnjaO')
+    .then(()=>{
       toast({
-        title: "Message Sent",
-        description: "We'll get back to you as soon as possible!",
-      });
-      form.reset();
-      setIsSubmitting(false);
-    }, 1500);
+        title:"Message Sent",
+        description:" We'll get back to you as soon as possible!"
+      })
+      form.reset()
+      setIsSubmitting(false)
+    },
+  (error) => {
+            console.error("EmailJS Error:", error);
+            toast({
+              title: "Error",
+              description: "Failed to send message. Please try again.",
+              variant: "destructive",
+            });
+            setIsSubmitting(false);
+          }).catch((err)=>{
+            console.log(err)
+            toast({
+              title:"Error happened",
+              description:"Form submission failed. Please try again",
+              variant:'destructive'
+            })
+          })
   }
 
   return (
@@ -100,8 +134,9 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-xl font-serif mb-2">Phone</h3>
-                    <p className="text-muted-foreground mb-1">Main Office: +91 123 456 7890</p>
-                    <p className="text-muted-foreground">Projects Team: +91 098 765 4321</p>
+                    <p className="text-muted-foreground mb-1">Zakariya
+: +91 948 281 3414</p>
+                    <p className="text-muted-foreground">Shafeeq P.H : +91 944 821 5119</p>
                   </div>
                 </div>
                 
@@ -111,8 +146,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-xl font-serif mb-2">Email</h3>
-                    <p className="text-muted-foreground mb-1">General Inquiries: info@shazabuilders.com</p>
-                    <p className="text-muted-foreground">Client Support: support@shazabuilders.com</p>
+                    <p className="text-muted-foreground mb-1">General Inquiries : shazabuilderscoorg@gmail.com</p>
+                    
                   </div>
                 </div>
                 
@@ -124,9 +159,9 @@ export default function Contact() {
                     <h3 className="text-xl font-serif mb-2">Location</h3>
                     <p className="text-muted-foreground">
                       SHAZA Builders & Engineers<br />
-                      123 Construction Avenue<br />
+                      Kushalnagar<br />
                       Coorg, Karnataka<br />
-                      India - 571201
+                      India - 571234
                     </p>
                   </div>
                 </div>
@@ -148,7 +183,7 @@ export default function Contact() {
                 <h3 className="text-xl font-serif mb-4">Find Us On Map</h3>
                 <div className="h-[300px] rounded-lg overflow-hidden">
                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248576.60870822118!2d75.62776124355788!3d12.45722869373093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba500def0d76b7d%3A0x3c85612fcf3089ce!2sCoorg%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1644483902023!5m2!1sen!2sin" 
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3895.908196484124!2d75.95521167506777!3d12.455834387814134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDI3JzIxLjAiTiA3NcKwNTcnMjguMCJF!5e0!3m2!1sen!2sin!4v1748100883398!5m2!1sen!2sin" 
                     width="100%" 
                     height="100%" 
                     style={{ border: 0 }} 
@@ -165,8 +200,8 @@ export default function Contact() {
               <div className="bg-shaza-darkgray rounded-lg p-8">
                 <h2 className="text-2xl font-serif mb-6">Send Us A Message</h2>
                 
-                <Form {...form}>
-                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                <Form {...form} >
+                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6" ref={ref}>
                     <FormField
                       control={form.control}
                       name="name"
