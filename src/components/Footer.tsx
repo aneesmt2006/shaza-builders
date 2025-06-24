@@ -62,11 +62,11 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-shaza-gold" />
-                <span>+91 948 281 3414</span>
+               <a href="tel:+919482813414"> <span>+91 948 281 3414</span></a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-shaza-gold" />
-                <a href="mailto:info@shazabuilders.com" className="gold-hover">shazabuilderscoorg@gmail.com</a>
+                <a href="mailto:shazabuilderscoorg@gmail.com" className="gold-hover">shazabuilderscoorg@gmail.com</a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-shaza-gold mt-1" />
