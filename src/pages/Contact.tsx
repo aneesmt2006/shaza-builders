@@ -134,8 +134,8 @@ const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
                   </div>
                   <div>
                     <h3 className="text-xl font-serif mb-2">Phone</h3>
-                    <a href="tel:+919482813414"><p className="text-muted-foreground mb-1">Zakariya
-: +91 948 281 3414</p></a>
+                    <a href="tel:+918431412756"><p className="text-muted-foreground mb-1">Zakariya
+: +91 843 141 2756</p></a>
                     <a href="+919448215119"> <p className="text-muted-foreground">Shafeeq P.H : +91 944 821 5119</p></a>
                    
                   </div>
